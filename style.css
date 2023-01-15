@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     font-family: "bitbit";
@@ -6,27 +9,31 @@ a {
     color: black;
 }
 h1 {
-    font-size: 45px;
+    font-size: 60px;
     text-align: center;
     border-bottom: 1px solid gray;
     margin: 0;
     padding: 20px;
 }
+h2 {
+    text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6);
+}
 ol {
     border-right: 1px solid gray;
     width: 100px;
     margin: 0;
-    padding: 20px;
+    padding: 24px 100px 0 0;
+    height: calc(100vh - 89px);
 }
 #grid {
     display: grid;
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: 148px 1fr;
 }
 #grid ol {
-    padding-left: 33px;
+    padding-left: 32px;
 }
 #grid #article {
-    padding-left: 25px;
+    padding-left: 24px;
 }
 @media (max-width: 800px) {
     #grid {
@@ -34,6 +41,8 @@ ol {
     }
     ol {
         border-right: none;
+        padding-bottom: 24px;
+        height: auto;
     }
     h1 {
         border-bottom: none;
@@ -43,4 +52,7 @@ ol {
     font-family: "bitbit";
     src: url("//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff"),
         url("//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff2");
+}
+.text_shadow {
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
 }
